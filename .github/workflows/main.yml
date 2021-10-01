@@ -1,0 +1,17 @@
+# Postgres on GitHub 2021-07-14 at 19:13:56
+
+name: Test
+
+on:
+  push
+
+jobs:
+  java:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Test
+      run: |
+       java -ea IsValidBST.java
