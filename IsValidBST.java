@@ -1,4 +1,4 @@
-class Solution {
+class IsValidBST {
 	final boolean debug = false;
 	public class LastElement{
 		Integer val = null;
@@ -146,7 +146,7 @@ class Solution {
 		assert(!isValidBST(tree5));
 	}
 	public static void main(String[] args) {
-		Solution s = new Solution();
+		IsValidBST s = new IsValidBST();
 		s.test2Bad();
 		s.test3Good();
 		s.test3Bad();
